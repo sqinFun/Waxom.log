@@ -1,6 +1,13 @@
 html, body {
     font-family: 'Montserrat', sans-serif;
-    color: #fff;
+    color: $secondary;
+}
+
+button:active, button:focus {
+    outline: none;
+  }
+button::-moz-focus-inner {
+border: 0;
 }
 
 .container {
@@ -10,4 +17,54 @@ html, body {
 .container-mini {
     margin: 0 auto;
     max-width: 760px;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.img-center-width {
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-center-height {
+    height: 100%;
+    object-fit: cover;
+}
+
+.bg-warning {
+    background-color: #fbfaf8;
+}
+
+.btn-none {
+    display: block;
+    background: none;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.btn {
+    display: block;
+    padding: 1.2rem 2rem;
+    border:0;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all .1s;
+}
+
+.btn-secondary {
+    background-color: #998675;
+    color: #fff;
+    box-shadow: 0 5px 0 #736357;
+}
+
+.btn:active {
+    margin-top: 10px;
+    box-shadow: none !important;
+}
+
+.color-active {
+    color: $active;
 }
